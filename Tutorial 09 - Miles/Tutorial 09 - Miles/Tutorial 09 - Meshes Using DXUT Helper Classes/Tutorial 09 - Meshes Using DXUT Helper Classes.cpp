@@ -509,10 +509,11 @@ void CALLBACK OnKeyboard( UINT nChar, bool bKeyDown, bool bAltDown, void* pUserC
 		case VK_DOWN:  g_b_DownArrowDown  = bKeyDown; break;
 		case VK_SHIFT: g_b_ShiftKeyDown   = bKeyDown; break;
 		case VK_CONTROL: g_b_CtrlKeyDown = bKeyDown; break;
-		case '0x41': g_b_a = bKeyDown; break;
-		case '0x57': g_b_w = bKeyDown; break;
-		case '0x44': g_b_d = bKeyDown; break;
-		case '0x53': g_b_s = bKeyDown; break;
+		// No quotation marks please...
+		case  0x41 : g_b_a = bKeyDown; break;
+		case  0x57 : g_b_w = bKeyDown; break;
+		case  0x44 : g_b_d = bKeyDown; break;
+		case  0x53 : g_b_s = bKeyDown; break;
 		// When space is pressed, the tiger will roar
 		case VK_SPACE:	   g_b_space = bKeyDown; break;
 		
